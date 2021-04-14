@@ -8,6 +8,33 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - Pixel event triggered when a filter is changed
+
+## [3.98.2] - 2021-04-06
+### Added
+- Main tests to the `FilterNavigator`.
+
+## [3.98.1] - 2021-03-26
+
+### Fixed
+- Redirect URLs that follows the format `https://www.example.com`.
+
+## [3.98.0] - 2021-03-25
+
+### Added
+- `categoryTreeBehavior` prop to the `SearchQuery`.
+
+## [3.97.0] - 2021-03-09
+### Added
+- `"priceRangeLayout"` prop to the `FilterNavigator`.
+
+## [3.96.0] - 2021-02-24
+### Added
+- `productCount` class on FacetItem
+
+## [3.95.1] - 2021-02-23
+### Fixed
+- Search title with `/`.
+
 ## [3.95.0] - 2021-02-11
 ### Added
 - `updateOnFilterSelectionOnMobile` prop to the `FilterNavigator`.
@@ -32,6 +59,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 - Temporarily removes the `searchResult` query cache.
+
 
 ## [3.92.1] - 2021-01-15
 ### Fixed

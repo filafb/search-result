@@ -1,8 +1,7 @@
 import React from 'react'
+import { jest } from '@jest/globals'
 
-export const useDevice = () => {
-  return { isMobile: false }
-}
+export const useDevice = jest.fn()
 
 export const withDevice = (WrappedComponent) => {
   return function WrappedWithDevice(props) {

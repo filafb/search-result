@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import React, { useContext, useMemo } from 'react'
+// eslint-disable-next-line no-restricted-imports
 import {
   compose,
   equals,
@@ -68,7 +69,7 @@ const SearchTitle = (props) => {
 
   const decodedTitle = useMemo(() => {
     try {
-      return decodeURI(title)
+      return decodeURIComponent(title)
     } catch {
       return title
     }

@@ -1,5 +1,4 @@
 import { useRuntime } from 'vtex.render-runtime'
-import { useState, useEffect } from 'react'
 
 const useRedirect = () => {
   const { navigate } = useRuntime()
@@ -27,7 +26,7 @@ const useRedirect = () => {
         to: originRedirect.replace(origin, ''),
       })
     } else {
-      window.location.replace(redirect.replace(/www\./, 'http://'))
+      window.location.replace(redirect.replace(/^www/, 'https://www'))
     }
   }
 

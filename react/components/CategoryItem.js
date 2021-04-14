@@ -29,6 +29,7 @@ const CategoryItem = ({
         href={href && href.toLowerCase()}
         title={label}
         onKeyDown={(e) => e.key === 'Enter' && onClick(e)}
+        data-testid={`categoryItem-${label}`}
       >
         {label}
       </a>
@@ -46,6 +47,7 @@ const CategoryItem = ({
       )}
       onClick={onClick}
       onKeyDown={(e) => e.key === 'Enter' && onClick(e)}
+      data-testid={`categoryItem-${label}`}
     >
       {label}
     </div>
